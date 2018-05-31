@@ -1,0 +1,11 @@
+/*****************************/
+/*          default          */
+/*****************************/
+
+* { box-sizing: border-box; font-family: 'OpenSans', sans-serif; font-weight: 400; margin: 0; padding: 0; }
+
+.wrapper { width: 1170px; margin: 0 auto; padding: 0px 50px; 
+    @media only screen and (max-width: 1270px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "gizyk-stack",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gh-pages": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "webpack": "^4.10.2",
+    "webpack-stream": "^4.0.3"
+  },
+  "homepage": "https://gizyk.github.io/gizyk-stack",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hoek": "^5.0.3"
+  }
+}

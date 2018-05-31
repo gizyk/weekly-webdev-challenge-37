@@ -1,0 +1,30 @@
+/*****************************/
+/*          grid             */
+/*****************************/
+
+.row { padding: $gap * (-1); }
+.clearfix:after { content: ''; display: block; clear: both; }
+
+@for $i from 1 through 12 { 
+    .col-#{$i} { @include col($i, 12); }
+}
+@media only screen and (max-width: $bp-desktop) {
+    @for $i from 1 through 12 {
+        .col-desktop-#{$i} { @include col($i, 12); }
+    }
+}
+@media only screen and (max-width: $bp-notebook) {
+    @for $i from 1 through 12 {
+        .col-notebook-#{$i} { @include col($i, 12); }
+    }
+}
+@media only screen and (max-width: $bp-tablet) {
+    @for $i from 1 through 12 {
+        .col-tablet-#{$i} { @include col($i, 12); }
+    }
+}
+@media only screen and (max-width: $bp-phone) {
+    @for $i from 1 through 12 {
+        .col-phone-#{$i} { @include col($i, 12); }
+    }
+}

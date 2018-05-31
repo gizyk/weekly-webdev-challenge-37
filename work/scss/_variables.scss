@@ -1,0 +1,28 @@
+/*****************************/
+/*         Variables         */
+/*****************************/
+
+//colors
+$color-primary: #bc2e3a;
+$color-secondary: #fff;
+$color-gray: #333;
+$color-brand: #29abe2;
+
+//z-index
+
+$over-base: 10;
+$overlay: 100;
+$over-all: 10000;
+
+//responsive
+
+$bp-phone: 360px;
+$bp-tablet: 768px;
+$bp-notebook: 992px;
+$bp-desktop: 1200px;
+
+//transitions
+$transition-default: ease-in-out 2s;
+
+//grid
+$gap: 15px;
