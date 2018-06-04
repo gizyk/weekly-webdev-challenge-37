@@ -13,7 +13,7 @@
     "webpack": "^4.10.2",
     "webpack-stream": "^4.0.3"
   },
-  "homepage": "https://gizyk.github.io/gizyk-stack",
+  "homepage": "https://gizyk.github.io/weekly-webdev-challenge-37",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
