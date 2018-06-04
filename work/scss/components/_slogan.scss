@@ -1,0 +1,10 @@
+/*****************************/
+/*          slogan           */
+/*****************************/
+
+.slogan { display: flex; flex-direction: column; align-items: center; height: 100vh; background: url(../img/placeimage-clipped.png); background-size: cover; -webkit-background-clip: text; background-position: 242px -239px; background-color: $color-white; font-size: 159px; color: transparent; 
+    &_item { display: block; font-family: LemonMilk; line-height: 135px; text-align: center; letter-spacing: 4px; font-weight: 700;
+        &--small { font-size: 96px; line-height: 80px; }
+    }
+    &--as-shadow { background: transparent; text-shadow: 0 0 24px $color-black; }
+}

@@ -39,6 +39,11 @@ gulp.task('style', function(){
 });
 
 
+gulp.task('sync', function(){
+    console.log("Browser Sync task start !");
+    browserSync.reload();
+})
+
 gulp.task('watch', function() {
     browserSync.init({
         server: {
@@ -49,6 +54,9 @@ gulp.task('watch', function() {
     });
     gulp.watch('work/scss/**/*.scss', ['style']);
     gulp.watch('work/js/**/*.js', ['js']);
+    gulp.watch('dist/img/*.png', ['sync']);
+    gulp.watch('dist/img/*.jpg', ['sync']);
+    gulp.watch('dist/*.html', ['sync']);
 });
 
 

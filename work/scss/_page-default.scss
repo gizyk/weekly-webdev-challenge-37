@@ -4,8 +4,11 @@
 
 * { box-sizing: border-box; font-family: 'OpenSans', sans-serif; font-weight: 400; margin: 0; padding: 0; }
 
-.wrapper { width: 1170px; margin: 0 auto; padding: 0px 50px; 
-    @media only screen and (max-width: 1270px) {
+.wrapper { width: 1600px; margin: 0 auto; padding: 0px;
+    @media only screen and (max-width: 1600px) {
         width: 100%;
     }
 }
+
+a { text-decoration: none; color: black; }
+li { list-style: none; }

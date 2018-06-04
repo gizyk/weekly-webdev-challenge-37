@@ -6,8 +6,20 @@
 @import 'grid';
 @import 'page-default';
 
+//Layout
+@import 'layout';
+
 //Assets
 @import 'fontfaces';
 
 //  Components
-@import 'components/lightblack';
+@import 'components/banner';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/navigation';
+@import 'components/icons';
+@import 'components/slogan';
+@import 'components/model';
+@import 'components/button';
+
+//content-display-flex_items-width/height-margin/padding-position-positon_items-background-fonts-colors

@@ -3,15 +3,18 @@
 /*****************************/
 
 //colors
-$color-primary: #bc2e3a;
-$color-secondary: #fff;
-$color-gray: #333;
-$color-brand: #29abe2;
+$color-primary: rgb(148, 46, 58);
+$color-secondary: #171717;
+$color-white: white;
+$color-alpha-white: rgba(255,255,255,0.43);
+$color-dark: #242424;
+$color-alpha-black: rgba(0, 1, 1, 0.47);
+$color-black: black;
 
 //z-index
-
-$over-base: 10;
-$overlay: 100;
+$over-static: 10;
+$over-visible: 100;
+$over-basic: 1000;
 $over-all: 10000;
 
 //responsive
