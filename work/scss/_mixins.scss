@@ -1,8 +1,0 @@
-/*****************************/
-/*          mxins            */
-/*****************************/
-
-//Columns -- look at _grid.scss
-@mixin col ($col, $sum) { width: percentage($col/$sum); display: inline-block; padding-left: $gap; padding-right: $gap;
-    @if $col != $sum { float: left; }
-}

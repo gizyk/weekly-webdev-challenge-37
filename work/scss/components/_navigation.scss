@@ -1,8 +1,0 @@
-/*****************************/
-/*        navigation         */
-/*****************************/
-
-.navigation { width: 552px; height: 40px; font-family: Lato; font-weight: 700; font-size: 15px;
-    ul { display: flex; justify-content: space-between; flex-flow: row wrap; }
-    li a { display: block; text-transform: uppercase; letter-spacing: 0.3px; color: $color-white; }
-}
