@@ -2,4 +2,7 @@
 /*          button           */
 /*****************************/
 
-.button { display: flex; align-items: center; justify-content: center; width: 192px; height: 54px; background-color: $color-white; font-size: 22px; font-weight: 700; font-family: Lato; text-transform: uppercase; color: $color-dark; border-radius: 50px; box-shadow: -4px 11px 40px 0px $color-alpha-black; }
+.button { display: flex; align-items: center; justify-content: center; width: 192px; height: 54px; background-color: $color-white; font-size: 22px; font-weight: 700; font-family: Lato; text-transform: uppercase; color: $color-dark; border-radius: 50px; box-shadow: -4px 11px 40px 0px $color-alpha-black; 
+    &--primary { background-color: $color-primary; color: $color-white; }
+    &--at-banner { position: absolute; top: 587px; left: 472px; z-index: $over-basic; }
+}

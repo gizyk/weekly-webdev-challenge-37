@@ -4,8 +4,9 @@ It's a 37 exercise from facebook group "Weekly Webdev Challenge", which realy on
 ## Complete
 - [x] Header with navigation and logo.
 - [x] Banner with slogan, model, button.
+- [x] WhoWeAre section
 ## In progress
-- [ ] WhoWeAre section 
+- [ ] WhatWeDo section
 
 ## Demo
 Demo site is [here](https://gizyk.github.io/weekly-webdev-challenge-37/index.html).

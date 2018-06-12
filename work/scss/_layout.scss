@@ -1,3 +1,7 @@
 /*****************************/
 /*          layout           */
 /*****************************/
+
+.rectangle { width: 930px; height: 930px; transform: rotate(45deg); background-color: $color-secondary; position: absolute; right: -87px; top: -471px; z-index: $over-static; }
+
+.notebook { margin-left: 25px; margin-top: 50px; }

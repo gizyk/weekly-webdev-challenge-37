@@ -1,0 +1,7 @@
+/*****************************/
+/*          whoweare         */
+/*****************************/
+
+.whoweare { height: 576px; position: relative; background-color: $color-background; overflow: hidden; 
+    &_container { display: flex; justify-content: center; position: absolute; z-index: $over-static; align-items: center; height: 576px; width: 100% }
+}

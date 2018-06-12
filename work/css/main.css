@@ -404,7 +404,8 @@
 .wrapper {
   width: 1600px;
   margin: 0 auto;
-  padding: 0px; }
+  padding: 0px;
+  position: relative; }
   @media only screen and (max-width: 1600px) {
     .wrapper {
       width: 100%; } }
@@ -419,6 +420,21 @@ li {
 /*****************************/
 /*          layout           */
 /*****************************/
+.rectangle {
+  width: 930px;
+  height: 930px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #171717;
+  position: absolute;
+  right: -87px;
+  top: -471px;
+  z-index: 10; }
+
+.notebook {
+  margin-left: 25px;
+  margin-top: 50px; }
+
 /*****************************/
 /*          fonts            */
 /*****************************/
@@ -437,6 +453,16 @@ li {
   src: url("../font/LemonMilkbold.otf");
   font-weight: 700; }
 
+@font-face {
+  font-family: "PeaceSans";
+  src: url("../font/PeaceSans.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../font/OpenSans-Regular.ttf");
+  font-weight: 400; }
+
 /*****************************/
 /*          banner           */
 /*****************************/
@@ -452,31 +478,14 @@ li {
     background-image: url(../img/placeimage.png);
     background-size: cover;
     background-repeat: no-repeat; }
+  .banner_content {
+    overflow: hidden;
+    height: calc(100vh - 63px); }
   .banner_overlay {
     width: 100%;
     position: absolute;
     top: 0;
     z-index: 10; }
-    .banner_overlay--on-top {
-      z-index: 100; }
-    .banner_overlay--over-top {
-      z-index: 1000; }
-    .banner_overlay--moved {
-      top: 239px;
-      left: -242px; }
-    .banner_overlay--holding {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .banner_overlay--holding-button {
-        top: 650px;
-        left: -232px; }
-      .banner_overlay--holding-model {
-        top: 54px;
-        left: 220px; }
 
 /*****************************/
 /*          header           */
@@ -565,10 +574,16 @@ li {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  left: 177px;
+  top: 175px;
   background: url(../img/placeimage-clipped.png);
   background-size: cover;
   -webkit-background-clip: text;
-  background-position: 242px -239px;
+  background-position: -177px -240px;
   background-color: white;
   font-size: 159px;
   color: transparent; }
@@ -584,16 +599,17 @@ li {
       line-height: 80px; }
   .slogan--as-shadow {
     background: transparent;
-    text-shadow: 0 0 24px black; }
+    text-shadow: 0 0 24px black;
+    z-index: 10; }
 
 /*****************************/
 /*          model            */
 /*****************************/
 .model {
   position: absolute;
-  top: 6%;
-  right: 1%;
-  z-index: 100; }
+  top: -10px;
+  right: 19px;
+  z-index: 1000; }
 
 /*****************************/
 /*          button           */
@@ -619,3 +635,65 @@ li {
   border-radius: 50px;
   -webkit-box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.47);
   box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.47); }
+  .button--primary {
+    background-color: #bc2e3a;
+    color: white; }
+  .button--at-banner {
+    position: absolute;
+    top: 587px;
+    left: 472px;
+    z-index: 1000; }
+
+/*****************************/
+/*         headline          */
+/*****************************/
+.headline {
+  font-family: PeaceSans;
+  font-size: 61px;
+  font-weight: 400;
+  color: #494949; }
+
+/*****************************/
+/*        paragraph          */
+/*****************************/
+.paragraph {
+  width: 470px;
+  margin-left: 10px;
+  font-family: OpenSans;
+  color: #6a6a6a;
+  font-size: 17px;
+  line-height: 30px; }
+
+/*****************************/
+/*       description         */
+/*****************************/
+.description {
+  margin-left: 70px;
+  margin-top: -40px; }
+  .description_item:first-child {
+    margin-bottom: 45px; }
+  .description_item:last-child {
+    margin-top: 75px; }
+
+/*****************************/
+/*          whoweare         */
+/*****************************/
+.whoweare {
+  height: 576px;
+  position: relative;
+  background-color: #FCFCFC;
+  overflow: hidden; }
+  .whoweare_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 576px;
+    width: 100%; }
