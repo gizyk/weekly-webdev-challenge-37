@@ -409,6 +409,8 @@
   @media only screen and (max-width: 1600px) {
     .wrapper, .wrapper--small {
       width: 100%; } }
+  .wrapper--static {
+    position: static; }
 
 .wrapper--small {
   width: 1245px; }
@@ -505,8 +507,8 @@ li {
     background-size: cover;
     background-repeat: no-repeat; }
   .banner_content {
-    overflow: hidden;
-    height: calc(100vh - 63px); }
+    height: calc(100vh - 63px);
+    overflow: hidden; }
   .banner_overlay {
     width: 100%;
     position: absolute;
@@ -526,6 +528,8 @@ li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: absolute;
+  z-index: 10000;
   width: 100%;
   height: 40px;
   margin-top: 23px;
@@ -599,17 +603,18 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
   height: 100vh;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
   z-index: 100;
-  left: 177px;
-  top: 175px;
+  left: -15vw;
+  top: 239px;
   background: url(../img/placeimage-clipped.png);
   background-size: cover;
   -webkit-background-clip: text;
-  background-position: -177px -240px;
+  background-position: 15vw -240px;
   background-color: white;
   font-size: 159px;
   color: transparent; }
@@ -633,8 +638,8 @@ li {
 /*****************************/
 .model {
   position: absolute;
-  top: -10px;
-  right: 19px;
+  top: 53px;
+  left: 28.6vw;
   z-index: 1000; }
 
 /*****************************/
@@ -666,8 +671,8 @@ li {
     color: white; }
   .button--at-banner {
     position: absolute;
-    top: 587px;
-    left: 472px;
+    top: 650px;
+    left: 29.3vw;
     z-index: 1000; }
 
 /*****************************/

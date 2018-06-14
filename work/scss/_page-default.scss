@@ -8,6 +8,7 @@
     @media only screen and (max-width: 1600px) {
         width: 100%;
     }
+    &--static { position: static; }
 }
 
 .wrapper--small { @extend .wrapper; width: 1245px; 
