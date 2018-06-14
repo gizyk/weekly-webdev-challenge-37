@@ -2,6 +2,11 @@
 /*          layout           */
 /*****************************/
 
-.rectangle { width: 930px; height: 930px; transform: rotate(45deg); background-color: $color-secondary; position: absolute; right: -87px; top: -471px; z-index: $over-static; }
+.rectangle { width: 930px; height: 930px; transform: rotate(45deg); background-color: $color-secondary; position: absolute; right: -87px; top: -471px; z-index: $over-static; 
+    &--samll { width: 200px; height: 200px; right: none; left: -143px; top: 310px; background-color: $color-primary; }
+}
 
 .notebook { margin-left: 25px; margin-top: 50px; }
+
+.assets { margin-top: 66px }
+
